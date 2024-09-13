@@ -3,14 +3,14 @@
     "firstName": "Tanya",
     "lastName": "Sinclair",
     "role": "UX Engineer",
-    "imgSrc": "/src/assets/images/image-tanya.jpg",
+    "imgSrc": "./images/image-tanya.jpg",
     "quote": "I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future."
   },
   {
     "firstName": "John",
     "lastName": "Tarkpor",
     "role": "Junior Front-end Developer",
-    "imgSrc": "/src/assets/images/image-john.jpg",
+    "imgSrc": "./images/image-john.jpg",
     "quote": "If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer."
   }
 ]
