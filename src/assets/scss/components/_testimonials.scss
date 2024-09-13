@@ -103,6 +103,7 @@
     height: max-content;
 
     @include a.breakpoint(medium) {
+      gap: 2rem;
       grid-area: 1/1 / 1/3;
     }
   }
