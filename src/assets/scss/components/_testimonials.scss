@@ -1,0 +1,87 @@
+@use '../abstract' as a;
+.testimonials {
+  grid-area: 1/2;
+  display: grid;
+  justify-items: center;
+  gap: 4rem;
+
+  &__image-slider {
+    display: grid;
+    justify-items: center;
+
+    background: url('./images/pattern-bg.svg') no-repeat bottom center;
+    background-size: contain;
+  }
+
+  &__image-container {
+    width: 100%;
+    display: grid;
+    
+    & > * {
+      &:nth-child(2n -1) {
+        display: none;
+      }
+    }
+  }
+  
+  &__image {
+    width: calc(100% - 2rem);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 20px a.$clr-box-shadow;
+    justify-self: center;
+  }
+
+  &__buttons {
+    border: unset;
+    position: relative;
+    bottom: 1rem;
+
+    &--next {
+      background-color: a.$clr-white;
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      box-shadow: 5px 5px 20px a.$clr-box-shadow;
+    }
+
+    &--previous {
+      background-color: a.$clr-white;
+      border-top-left-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      box-shadow: -5px 5px 20px a.$clr-box-shadow;
+    }
+  }
+  
+  &__buttons-icon {
+    padding: 1rem 1.25rem;
+  }
+
+  &__text {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__quote {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__user-text {
+    display: grid;
+  }
+
+  &__user-name {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__user-role {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+  }
+}

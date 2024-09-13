@@ -1,25 +1,5 @@
 @use 'breakpoints' as b;
 
-// Purpose: Converts a map of properties into CSS custom properties (variables).
-//
-// Parameters:
-// - $shorthand: A prefix for the generated CSS custom properties.
-// - $map: A map containing key-value pairs, which can be flat or nested.
-//
-//Return: Outputs CSS custom properties directly into the stylesheet.
-@mixin map-to-root($shorthand, $map) {
-  @each $key, $value in $map {
-    @if type-of($value) == 'map' { // nested map
-      @each $inner-key, $inner-value in $value {
-        --#{$shorthand}-#{$key}-#{$inner-key}: #{$inner-value};
-      }
-    } @else { // map
-      --#{$shorthand}-#{$key}: #{$value};
-    }
-  }
-}
-
-
 // Purpose: Creates a media query for a given breakpoint size.
 //
 // Parameters:

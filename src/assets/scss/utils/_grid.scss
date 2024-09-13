@@ -1,0 +1,4 @@
+.contained-grid {
+  display: grid;
+  grid-template-columns: 1fr min(100% - 2rem , 100rem) 1fr;
+}
