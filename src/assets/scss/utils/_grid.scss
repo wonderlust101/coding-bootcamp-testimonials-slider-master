@@ -1,4 +1,10 @@
+@use '../abstract' as a;
+
 .contained-grid {
   display: grid;
-  grid-template-columns: 1fr min(100% - 2rem , 100rem) 1fr;
+  grid-template-columns: 1fr min(100% - 2rem * 2, 40rem) 1fr;
+  
+  @include a.breakpoint(medium) {
+    grid-template-columns: 1fr min(100% - 12rem*2, 100rem) 1fr;
+  }
 }
